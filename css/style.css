@@ -1,0 +1,192 @@
+*{
+    /* aqui dentro desse corpo modifica tula la */
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+
+}
+
+:root{
+    --color_primaria:#072107;
+    --color_secundaria:#0a300a;
+    --color_letras: #a3a5a4;
+    --color_branco: #ffffff;
+    --color_preto: #000000;
+    --color_letra2: #107210;
+}
+
+#logo{
+    width: 200px;
+}
+
+nav{
+    /* configura o flex par movimentar a coisa pra lado ou para o centro */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #072107;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li a{
+    margin-right: 80px;
+    font-size: 1em;
+    font-weight: 100;
+    color: var(--color_branco);
+
+    /* aqui é para virar a maozinha qundo selecionar */
+    cursor: pointer;
+    
+}
+
+nav ul li label img{
+    width: 25px;
+    margin-right: 10px;
+}
+/* hover é para mudar de cor o texto qnd o mouse passa por cima */
+nav ul li:hover a{
+    color: aqua;
+
+}
+
+/* Toda vez que eu for chamar um id vou usar o # */
+#banner{
+    width: 100%;
+
+}
+
+#titulo{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #43971c;
+    background-color: #072107;
+}
+
+main{
+    
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 10px;
+    color: #ffffff;
+    background-image: url(/sitegame/assets/fundo\ da\ pagina11.png)
+    
+}
+
+
+main h1{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: #2ff32f;
+
+}
+
+main label .option .arena {
+    box-sizing: border-box;
+    padding: 0.3em;
+    letter-spacing: 0em;
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+
+    border-radius: 0em;
+    background-color: rgb(255, 255, 255);
+}
+
+#cardsPesonagens {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    
+    
+}
+
+#cardsPesonagens .cards div {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 2s ease;
+    
+      
+}
+
+#cardsPesonagens .cards div img  {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: rgba(46, 179, 240, 0.4) 5px 5px, rgba(46, 162, 240, 0.3) 10px 10px, rgba(46, 162, 240, 0.2) 15px 15px, rgba(46, 185, 240, 0.1) 20px 20px, rgba(46, 179, 240, 0.05) 25px 25px;
+    
+    }
+
+#cardsPesonagens .cards div:hover {
+
+    transform: scale(1.4);
+}
+
+.cards div h2 {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+
+     
+    
+ 
+}
+
+.cards a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 80px;
+    color: #2ff32f; 
+    font-size: 15px;
+    transform: rotateY(20deg);
+    transition: transform 2s ease-in-out;
+}
+
+.cards a:hover {
+    transform: rotateY(360deg);
+    transition: transform 2s ease;
+}
+
+.crocodile{
+    padding-top:  350px;;
+    flex-direction:row;
+    justify-content: left;
+    display: flex;
+    width: 30%;
+    
+
+}
+
+
+    
+
+footer{
+    background-color: #072107;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+
+}
+
+.autor{color: aqua;}

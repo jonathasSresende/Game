@@ -1,0 +1,86 @@
+/* root e Body sao configurações iniciais do site */
+:root{
+    --collor_primary: #ffffff;
+    --collor_secund: #000000;
+    --collor_terceira: #5600e0;
+
+}
+
+
+/* body é onde formato minha tela */
+
+
+section div img:hover{
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    border-radius: 50px;
+    animation: movimento 5s infinite alternate;
+
+}
+
+@keyframes movimento{
+    from {
+        transform: translateY(0px);
+        /* transform: translateX(100px); */
+    }
+    to{
+        /* transform: translateX(0); */
+        transform: translateY(400px);
+    }
+}
+
+main {
+    padding-left: 500px;
+    display: flex;
+    flex-direction: column;
+   
+    width: 100%;
+    
+}
+
+.Demon{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+
+}
+
+main section div img{
+    width: 100%;
+    flex-direction:row;
+}
+
+main button {
+            flex-direction:row;
+            border-radius: 50px;
+            background-color: rgb(139, 0, 219);
+            
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            /* velocidade do botao crescer */
+            transition: all 0.5s ease;
+        }
+        /* hover muda a cor qndo vc passa o mouse em cima */
+main button:hover {
+    
+            border-radius: 50px;
+            background-color: rgb(139, 0, 219);
+            color: #ffffff;
+            /* fazer o botao crescer */
+            transform: scale(1.1);
+        }
+
+
+
+footer{
+    background-color: #072107;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.autor{color: aqua;}

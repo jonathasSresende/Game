@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras</title>
+</head>
+<body>
+    <style>
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+      }
+      .quadrado {
+        background: red;
+        width: 50px;
+        height: 50px;
+        /* nome da animaçao / tempo / maneira de como ela vai se comportar */
+        animation: movimento 5s infinite alternate;
+      }
+
+/* movimentaçao do botao */
+      @keyframes movimento{
+        from {
+            transform: translateY(100px);
+            /* transform: translateX(100px); */
+        }
+        to{
+            /* transform: translateX(0); */
+            transform: translateY(0);
+        }
+      }
+
+        button{
+            background-color: aqua;
+            border: none;
+            padding: 15px;
+            color: rgb(0, 136, 255);
+            font-weight: 700;
+            /* velocidade do botao crescer */
+            transition: all 0.5s ease;
+        }
+        /* hover muda a cor qndo vc passa o mouse em cima */
+        button:hover{
+            background-color: blue;
+            color: #ffffff;
+            /* fazer o botao crescer */
+            transform: scale(1.4);
+            
+        }
+
+        /* Focus qnd clica muda a cor do botao */
+        button:focus{
+            background-color: rgb(255, 68, 68);
+            color: #ffffff  ;
+            transform: scale(1,1);
+        }
+
+
+
+        @keyframes movimento{
+        0%{
+            transform: translate(150px,-100px)
+
+        }
+        
+        25%{
+            transform: translate(150px,100px);
+        
+        }
+           
+        50% {
+            transform: translate(-150px,100px);
+            /* transform: translateX(100px); */
+        }
+        75%{
+            /* transform: translateX(0); */
+            transform: translate(-150px,-100px);
+        }
+
+        100%{
+            transform: translate(150px,-100px);
+        }
+        }
+
+    </style>
+    
+    <div class="quadrado">
+      
+
+
+    </div>
+
+    <button>Voltar</button>
+
+</body>
+</html>
